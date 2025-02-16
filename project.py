@@ -80,7 +80,7 @@ class ExpenseTracerApp:
         home_label.place(x=300, y=50)
 
         # Add Image 
-        image_path = r"C:\Users\Mahitha\OneDrive\Desktop\Projects\home_image.png"  # Replace with the correct path to your image
+        image_path = os.path.join(os.path.dirname(__file__), "home_image.png")  # Ensure the image is in the same directory as the script
 
         try:
             image = Image.open(image_path)
